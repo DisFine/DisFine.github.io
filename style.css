@@ -149,7 +149,7 @@ nav ul li a:hover::after{
 .tab-contents ul li span{
     color: #b54769;
     font-size: 18px;
-    font-family: 'showcard gothic',sans-serif;
+    font-family: 'Orbitron', serif;
 }
 .tab-contents{
     display: none;
@@ -170,7 +170,7 @@ nav ul li a:hover::after{
     display: flex;
     font-size: 30px;
     margin-top: -10px;
-    font-family: 'showcard gothic',sans-serif;
+    font-family: 'Orbitron', serif;
 }
 .services-list img{
     margin: 20%;
@@ -323,7 +323,7 @@ form .btn.btn2{
     text-align: center;
     padding: 25px;
     background: #262626;
-    font-family: 'showcard gothic',sans-serif;
+   font-family: 'Orbitron', serif;
     font-weight: 300;
     margin-top: 20px;
 }
