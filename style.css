@@ -45,7 +45,7 @@ nav ul li a{
     color: rgb(255, 254, 254);
     text-decoration: none;
     font-size: 25px;
-    font-family: 'Space Monkey', sans-serif;
+    font-family: 'space monkey', sans-serif;
     position: relative;
 }
 nav ul li a::after{
@@ -108,7 +108,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .sub-title{
-    font-family: 'Space Monkey', sans-serif;
+    font-family: 'space monkey', sans-serif;
     font-size: 40px;
     font-weight: 600;
     color: white;
@@ -126,7 +126,7 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    font-family: 'Space Monkey', sans-serif;
+    font-family: 'space monkey', sans-serif;
 }
 .tab-links::after{
     content: '';
@@ -260,7 +260,7 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    font-family: 'Space Monkey', sans-serif;
+    font-family: 'space monkey', sans-serif;
     font-size: 20px;
 }
 .btn:hover{
