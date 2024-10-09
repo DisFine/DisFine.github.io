@@ -15,12 +15,11 @@ body{
     color: white;
 }
 #header{
-    display: flex;
     height:100vh;
     background-image: url(images/20241008181057_1.jpg);
     background-size: cover;
     background-position: center;
-    justify-content: center;
+    flex-direction: column;
 }
 .container{
     padding: 10px 2%;
@@ -35,16 +34,15 @@ body{
 }
 nav ul{
     display: flex;
-    align-items: center;
     list-style: none;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    column-gap: 3%;
+    flex-direction: row;
+    justify-content: center;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 40px;
+    margin: 10px;
 }
 nav ul li a{
     color: rgb(255, 254, 254);
@@ -77,9 +75,7 @@ nav ul li a:hover::after{
 }
 .header-text {
     width: 50%;
-    margin-top: 35%;
-    /* margin-left: 3%; */
-    font-size: 30px;
+    margin-top: 27%;
 }
 .header-text p{
     font-size: 30px;
@@ -203,8 +199,9 @@ nav ul li a:hover::after{
 }
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(23%,1fr));
+    grid-gap: 3%;
+    grid-row-gap: 10%;
     margin-top: 50px;
 }
 .work{
@@ -213,10 +210,12 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 .work img{
-    width: 150%;
     border-radius: 10px;
     display: block;
     transition: transform 0.4s;
+}
+.hiddenWork{
+    display: none;
 }
 .layer{
     width: 100%;
@@ -269,6 +268,21 @@ nav ul li a:hover::after{
     color: white;
     font-family: 'space monkey', sans-serif;
     font-size: 20px;
+}
+#SMBtn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff184c;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-family: 'space monkey', sans-serif;
+    font-size: 20px;
+}
+#SMBtn:hover{
+    background: #ff184c;
 }
 .btn:hover{
     background: #ff184c;

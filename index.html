@@ -43,7 +43,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class='sub-title'>About Me</h1>
-                    <p>Daithoulung Rongmai, 19<br> I am a Computer Engineering aspirants studying in 4th semester of Kalinga Institute Of Industrial Technology(KIIT). dedicated and passionate second-year Computer Science and Engineering (CSE) student with a passion for software development and a strong foundation in c, Java, Javascript. I am constantly pushing my boundaries and trying to enhancing my abilities for Future</p>
+                    <p>Daithoulung Rongmai, 20<br> I am a Computer Engineering aspirants studying in 5th semester of Kalinga Institute Of Industrial Technology(KIIT). dedicated and passionate second-year Computer Science and Engineering (CSE) student with a passion for software development and a strong foundation in c, Java and python. I am constantly pushing my boundaries and trying to enhancing my abilities for Future</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -51,9 +51,12 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>C Programming</span><br>since 2 Years</li>
-                            <li><span>Java/Java Script</span><br>since 3 Years</li>
-                            <li><span>Python</span><br>since 3 Years</li>
+                            <li><span>C Programming</span><br>Since 2022 ( Intermediate + )</li>
+                            <li><span>C++ Programming</span><br>Since 2023 ( Beginner + )</li> 
+                            <li><span>Java/Java Script</span><br>Since 2022 ( Intermediate - )</li>
+                            <li><span>Python</span><br>Since 2020 ( Intermediate + )</li>
+                            <li><span>React</span><br>Since 2024 ( Beginner + )</li>
+                            <li><span>HTML/CSS</span><br>Since 2022 ( Intermediate + )</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -72,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div id="services">
+    <!-- <div id="services">
         <div class="container">
             <h1 class='sub-title'>MY PROJECTS</h1>
             <div class="services-list">
@@ -90,37 +93,61 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">MY PROJECTS</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/1.jpg">
+                    <div class="layer">
+                        <h3>Asset Recovery</h3>
+                        <p>A web application designed to help users report lost items and search for found ones. It streamlines the process of locating misplaced belongings by connecting finders and owners through a user-friendly platform, helping to reunite people with their lost assets.</p>
+                        <a href="https://github.com/DisFine/AssetRecovery"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/2.jpg">
+                    <div class="layer">
+                        <h3>Cyber Crime Reporting System</h3>
+                        <p>A comprehensive platform for reporting cybercrimes and tracking case progress. This application allows users to submit detailed crime reports, receive updates, and access resources to understand cyber threats, helping authorities streamline investigations and promote public safety.</p>
+                        <a href="https://github.com/DisFine/CrimeReportingSystem"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/3.jpg">
                     <div class="layer">
                         <h3>MLSA PROJECT</h3>
                         <p>Prototype program which can detect our hand and use its movement to cut out a geometric shape similar to the famous internet series "Squid Game". </p>
                         <a href="https://github.com/DisFine/MLSA-CookieCutter"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/2.jpg">
+                <div class="work hiddenWork">
+                    <img src="images/3.jpg">
                     <div class="layer">
-                        <h3>N/A</h3>
-                        <p>        Coming Soon...        </p>   
+                        <h3>Kevent App</h3>
+                        <p>A web application designed to display all events taking place in the college. It provides users with a comprehensive list of upcoming events, allowing them to stay informed about various activities such as academic lectures, sports competitions, and cultural festivals. The platform includes features like event filtering by category, a search function, and an easy-to-use interface that fosters community engagement and participation.</p>
+                        <a href="https://github.com/DisFine/Kevent-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hiddenWork">
+                    <img src="images/3.jpg">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>N/A</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work hiddenWork">
                     <img src="images/3.jpg">
                     <div class="layer">
-                        <h3>N/A</h3>
-                         <p>        Coming Soon...     </p>   
+                        <h3>Coming Soon</h3>
+                        <p>N/A</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <btn id="SMBtn">Show More</btn>
         </div>
     </div>
     <div id="contact">
@@ -169,6 +196,26 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");
         }
+    </script>
+    <script>
+        document.getElementById("SMBtn").addEventListener("click", function() {
+            const allProjects = document.querySelectorAll(".work");
+            // console.log(allProjects);
+            const hiddenProjects = Array.from(allProjects).slice(3,allProjects.length);
+            // console.log(hiddenProjects);
+            if (this.textContent === "Show More") {
+                hiddenProjects.forEach(project => {
+                    project.classList.remove("hiddenWork");
+                });
+                this.textContent = "Show Less";
+            } 
+            else {
+                hiddenProjects.forEach(project => {
+                    project.classList.add("hiddenWork");
+                });
+                this.textContent = "Show More";
+            }
+        });
     </script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
