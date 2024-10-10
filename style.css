@@ -387,6 +387,9 @@ nav .fa-solid{
     #header{
         background-image: url(images/Untitled.png);
     }
+    #about{
+        padding: 0;
+    }
     .logo h1{
         font-size: 20px;
     }
@@ -435,8 +438,25 @@ nav .fa-solid{
         left: 20px;
         cursor: pointer;
     }
+    .about-col-2 {
+        flex-basis: unset;
+        padding: 10px;
+    }
+    .about-col-2 p {
+        font-size: 14px;
+    }
+    .tab-titles {
+        display: flex;
+        justify-content: center;
+    }
     .tab-links{
         margin-right: 20px;
+        font-size: 14px;
+    }
+    .tab-contents ul li {
+        font-size: 14px;
+    }
+    .tab-contents ul li span{
         font-size: 14px;
     }
     .sub-title{
@@ -460,11 +480,16 @@ nav .fa-solid{
     .work-list img{
         width: 150%;
         height: 100%;
-        /* grid-template-columns: repeat(auto-fit, minmax(10%, 1fr)); */
     }
-}
-#msg{
+    .about-col-1 img {
+        width: 150%;
+    }
+    #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
+    }
+    .container{
+        padding: 10px 5%;
+    }
 }
