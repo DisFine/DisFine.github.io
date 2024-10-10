@@ -477,6 +477,9 @@ nav .fa-solid{
     .logo img{
         width:  100%;
     }
+    .work-list{
+        grid-template-columns: repeat(auto-fit, minmax(43%,1fr));
+    }
     .work-list img{
         width: 150%;
         height: 100%;
@@ -491,5 +494,8 @@ nav .fa-solid{
     }
     .container{
         padding: 10px 5%;
+    }
+    .layer p{
+        font-size: 10px;
     }
 }
