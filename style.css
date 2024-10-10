@@ -178,14 +178,18 @@ nav ul li a:hover::after{
     font-family: 'Orbitron', serif;
 }
 .services-list img{
-    margin: 20%;
-    margin-bottom: -30px;
+    margin-top: 35%;
+    margin-bottom: 10%;
+    /* margin-bottom: -30px; */
     max-width: 100%;
-    max-height: auto;
 }
 .services-list div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #262626;
     padding: 40px;
+    padding-bottom: 10px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
@@ -381,35 +385,49 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 1000px){
     #header{
-        background-image: url(images/background.jpg);
+        background-image: url(images/Untitled.png);
+    }
+    .logo h1{
+        font-size: 20px;
     }
     .header-text p{
         margin-top: 512px;
-        font-size: 20px;
+        font-size: 10px;
     }
     .header-text h1{
         font-size: 15px;
     }
     nav .fa-solid{
-        display: block;
-        font-size: 20px;
+        display: flex;
+        font-size: 30px;
+        margin-right: 25px;
+        flex-direction: row-reverse;
     }
     nav ul{
+        display: flex;
+        flex-direction: column;
         background: #000000;
-        opacity: 60%;
+        opacity: 0.90;
         position: fixed;
-        top: 8px;
-        right: -200px;
-        width: 220px;
-        height: 96vh;
+        top: 24px;
+        right: -400px;
+        width: 184px;
+        height: 95vh;
         padding-top: 0px;
         z-index: 2;
         transition: right 0.5s;
     }
+    nav ul li{
+        display: flex;
+        justify-content: center;
+        border: 1px solid;
+        border-radius: 14px;
+    }
+
     nav ul li a{
         display: block;
         margin: 25px;
-        font-size: 20px;
+        font-size: 15px;
     }
     nav ul .fa-solid{
         position: absolute;
@@ -438,6 +456,11 @@ nav .fa-solid{
     }
     .logo img{
         width:  100%;
+    }
+    .work-list img{
+        width: 150%;
+        height: 100%;
+        /* grid-template-columns: repeat(auto-fit, minmax(10%, 1fr)); */
     }
 }
 #msg{
