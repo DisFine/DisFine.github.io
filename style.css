@@ -481,7 +481,7 @@ nav .fa-solid{
         grid-template-columns: repeat(auto-fit, minmax(43%,1fr));
     }
     .work-list img{
-        width: 150%;
+        width: 200%;
         height: 100%;
     }
     .about-col-1 img {
@@ -495,7 +495,11 @@ nav .fa-solid{
     .container{
         padding: 10px 5%;
     }
-    .layer p{
-        font-size: 10px;
+    .layer h3{
+        font-size: 9px;
+    }
+    .layer p {
+        width: 160%;
+        font-size: 7px;
     }
 }
