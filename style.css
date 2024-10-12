@@ -104,6 +104,10 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 35%;
 }
+.about-col-2 .Abt {
+    font-family: 'times new roman',serif;
+    font-size: 20px;
+}
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
@@ -126,12 +130,13 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 20px;
-    font-weight: 500;
     cursor: pointer;
     position: relative;
     font-family: 'space monkey', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
 }
+
 .tab-links::after{
     content: '';
     width: 0;
