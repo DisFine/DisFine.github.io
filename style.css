@@ -121,11 +121,6 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: white;
 }
-.about-col-2 p{
-    font-family: 'times new roman', serif;
-    font-size: 20px;
-    margin-top: 30px;
-}
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
